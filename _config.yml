@@ -14,13 +14,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 lang: en-US
-title: Molla Hafizur Rahman
-email: hafiz.sunny0909@gmail.com
+title: Gazi A. Raihan
+email: raihan.mech157@gmail.com
 description: AI enthusiastic
 baseurl: # the optional subpath of your site, e.g. "/blog"
-url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url: graihan57.github.io
 author:
-  name: Molla Hafizur Rahman
+  name: Gazi A. Raihan
   twitter:
   picture: /images/bio.jpg
 twitter_username: Sunny09022
