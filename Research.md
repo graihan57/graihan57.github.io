@@ -2,7 +2,7 @@
 title: "Research"
 layout: page
 ---
-## University of Arkansas (August, 2017 - Present)
+## University of New Orleans (August, 2021 - Present)
 
 ### Cluster analysis of sequential behavior
 - Conducted system design experiment and collect user behavioral data through a CAD system. Extract, manipulate and clean data for statistical analysis.
