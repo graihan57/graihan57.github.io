@@ -16,16 +16,16 @@
 lang: en-US
 title: Gazi A. Raihan
 email: raihan.mech157@gmail.com
-description: AI enthusiastic
-baseurl: # the optional subpath of your site, e.g. "/blog"
+description: CFD and Aerodynamics Enthusiasts 
+baseurl: ""
 url: graihan57.github.io
 author:
   name: Gazi A. Raihan
   twitter:
   picture: /images/bio.jpg
-twitter_username: Sunny09022
-github_username: HafizSunny
-linkedin_username: molla-hafizur-rahman-a5284151
+twitter_username: graihan57
+github_username: graihan57
+linkedin_username:graihan57
 
 logo: "/images/k.svg"
 search: # true, false (default)
