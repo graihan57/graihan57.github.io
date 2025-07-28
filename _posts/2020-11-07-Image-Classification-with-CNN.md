@@ -1,5 +1,5 @@
 ---
-title: "Image Classification with Convolutional neural network"
+title: "Wind Turbine Blade Design for Extreme Loads"
 image: /images/dreamy.jpg
 categories:
   - Classification
