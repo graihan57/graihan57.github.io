@@ -17,7 +17,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Molla Hafizur Rahman
+title: Gazi Raihan  
 description: 'vCard & Resume Template'
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://arlo-jekyll-theme.vercel.app" # the base hostname & protocol for your site, e.g. http://example.com
@@ -29,8 +29,8 @@ logo:
 favicon:  ''
 
 vendor:
-  name: Molla Hafizur Rahman
-  url: "https://github.com/HafizSunny"
+  name: Gazi Raihan
+  url: "https://github.com/graihan57"
 
 html_directionality:  'rtl' # ltl ( default ) "rtl", ltl
 # Build settings
@@ -117,14 +117,14 @@ header:
 ###########################   Home / hero  ################################
 ###########################################################################
 
-first_name: Molla Hafizur
-last_name: Rahman
+first_name: Gazi
+last_name: Raihan
 date_of_bath: '1992-09-10 00:00'
-email: 'hafiz.sunny0909@gmail.com'
-phone: '+1 4798008544'
-address: 'Fayetteville, AR, USA'
+email: 'raihan.mech157@gmail.com'
+phone: '+1 504-377-1114'
+address: 'New Orleans, LA, USA'
 interests: 'Playstation, Reading'
-study: 'Univercity of Arkansas'
+study: 'University of New Orleans'
 degree: 'PhD'
 cv_download_link: '#'
 user_intro: ' I am a Data scientist, and I&#39;m very passionate and dedicated to my work. With 5+ years experience in data science and machine learning, I have acquired the skills and knowledge necessary to make a project a successfull.'
