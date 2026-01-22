@@ -1,0 +1,44 @@
+{%- assign animation = false -%}
+{%- if page.home_style == 'animation' -%}
+ {%- assign animation = true -%}
+{%- endif -%}
+<div class="arlo_tm_section">
+    <div class="arlo_tm_timeline">
+        <div class="container">
+            <div class="arlo_title_holder">
+                <span>{{ site.experience_tagline }}</span>
+                <h3>{{ site.experience_title }}</h3>
+            </div>
+            <div class="timeline_inner">
+                <div class="left">
+                    <ul>
+                        {%- for education in site.educations -%}
+                        <li  class="{%- if animation -%}wow fadeInUp{%- endif -%}" {%- if animation -%}data-wow-duration="0.8s"{%- endif -%}>
+                            <div class="inner">
+                                <img class="svg" src="{{ 'img/svg/degree-5.svg' | relative_url }}" alt="" />
+                                <p class="year">{{ education.year }}</p>
+                                <h3 class="title">{{ education.title }}</h3>
+                                <p class="text">{{ education.description }}</p>
+                            </div>
+                        </li>
+                        {%- endfor -%}
+                    </ul>
+                </div>
+                <div class="right">
+                    <ul>
+                        {%- for experience in site.experiences -%}
+                        <li class="{%- if animation -%}wow fadeInUp{%- endif -%}" {%- if animation -%}data-wow-duration="0.8s"{%- endif -%}>
+                            <div class="inner">
+                                <img class="svg" src="{{ 'img/svg/portfolio.svg' | relative_url }}" alt="" />
+                                <p class="year">{{ experience.year }}</p>
+                                <h3 class="title">{{ experience.title }}</h3>
+                                <p class="text">{{ experience.description }}</p>
+                            </div>
+                        </li>
+                        {%- endfor -%}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

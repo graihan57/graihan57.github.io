@@ -1,0 +1,37 @@
+{%- assign animation = false -%}
+{%- if page.home_style == 'animation' -%}
+ {%- assign animation = true -%}
+{%- endif -%}
+<div class="arlo_tm_section">
+    <div class="arlo_tm_testimonial">
+        <div class="testimonial_inner">
+            <div class="testimonial_bg">
+                <div class="image jarallax" data-speed-="0" data-img-url="{{ 'img/slider/1.jpg' | relative_url }}"></div>
+                <div class="overlay"></div>
+            </div>
+            {%- for testimonial in site.testimonials -%}
+            <div class="testimonial_content">
+                <div class="container">
+                    <div  class="{%- if animation -%}content_inner wow fadeIn {%- else -%}content_inner{%- endif -%} " {%- if animation -%}data-wow-duration="0.8s"{%- endif -%}>
+                        <div class="icon">
+                            <img class="svg" src="{{ 'img/svg/quotes.svg' | relative_url }}" alt="" />
+                        </div>
+                        <div class="texts">
+                            <p>{{ testimonial.quote }}</p>
+                            <div class="author">
+                                <div class="image">
+                                    <div class="main" data-img-url="{{ testimonial.author_image | relative_url }}"></div>
+                                </div>
+                                <div class="job">
+                                    <h3>{{ testimonial.author_name }}</h3>
+                                    <span>{{ testimonial.author_profession }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {%- endfor -%}
+        </div>
+    </div>
+</div>

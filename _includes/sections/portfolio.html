@@ -1,0 +1,42 @@
+{%- assign animation = false -%}
+{%- if page.home_style == 'animation' -%}
+ {%- assign animation = true -%}
+{%- endif -%}
+<div class="arlo_tm_section" id="portfolio">
+    <div class="arlo_tm_portfolio">
+        <div class="container">
+            <div class="arlo_title_holder">
+                <span>{{ site.portfolio_tagline }}</span>
+                <h3>{{ site.portfolio_title }}</h3>
+            </div>
+            <div class="portfolio_inner">
+                <div class="arlo_tm_portfolio_titles"></div>
+                <div class="portfolio_filter">
+                    <ul>
+                        <li><a href="{{ 'blog' | relative_url }}" class="current" data-filter="*">All</a></li>
+                        {%- for category in site.portfolio_categories -%}
+                        <li><a href="#" data-filter=".{{category | downcase }}">{{category |capitalize }}</a></li>
+                        {%- endfor -%}
+                    </ul>
+                </div>
+                <div class="portfolio_list">
+                    <ul class="gallery_zoom">
+                        {%- for portfolio in site.portfolios -%}
+                        <li class="{{ portfolio.type | downcase }}">
+                            <div class="inner">
+                                <div class="entry arlo_tm_portfolio_animation_wrap" data-title="{{ portfolio.title | capitalize }}" data-category="{{ portfolio.category | capitalize }}">
+                                    <a class="{%- if portfolio.type == 'Supervised' or 'Unsupervised' or 'Reinforcement learning' -%}popup-Link {%- else -%}  zoom {%- endif -%}" href="{{  portfolio.Link| default: portfolio.main_image | relative_url }}">
+                                        <img src="{{ 'img/portfolio/600x600.jpg' | relative_url }}" alt="" />
+                                        <div class="main_image" data-img-url="{{ portfolio.main_image | relative_url }}"></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        {%- endfor -%}
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

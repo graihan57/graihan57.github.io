@@ -1,0 +1,94 @@
+{%- assign animation = false -%}
+{%- if page.home_style == 'animation' -%}
+ {%- assign animation = true -%}
+{%- endif -%}
+
+<div class="arlo_tm_section" id="about">
+
+    <div class="arlo_tm_about_wrap_all">
+        <div class="arlo_tm_about">
+            <div class="container">
+                <div class="arlo_title_holder">
+                    <span>Main Info</span>
+                    <h3>About</h3>
+                </div>
+                <div class="about_inner">
+                    <div class="{%- if animation -%}leftbox wow fadeInLeft {%- else -%}leftbox {%- endif -%}" {%- if animation -%}data-wow-duration="0.8s"{%- endif -%}>
+                        <div class="about_image_wrap parallax" data-relative-input="true">
+                            <div class="image layer" data-depth="0.1">
+                                <img src="{{ 'img/about/550x650.jpg' | relative_url }}" alt="" />
+                                <div class="inner" data-img-url="{{ 'img/about/2.jpg' | relative_url }}"></div>
+                            </div>
+                            <div class="border layer" data-depth="0.2">
+                                <img src="{{ 'img/about/550x650.jpg' | relative_url }}" alt="" />
+                                <div class="inner"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div  class="{%- if animation -%}rightbox wow fadeInRight {%- else -%} rightbox {%- endif -%}" {%- if animation -%}data-wow-duration="0.8s"{%- endif -%} >
+                        <div class="about_title">
+                            <h3>I'm {{ site.first_name }} {{ site.last_name }} and
+                                <span class="arlo_tm_animation_text_word"></span>
+                            </h3>
+                        </div>
+                        <div class="text">
+                            <p>
+                                Hi! My name is
+                                <span>{{ site.first_name }} {{ site.last_name }}</span>.
+                               {{ site.user_intro }}
+                            </p>
+                        </div>
+                        <div class="about_short_contact_wrap">
+                            <ul>
+                                <li>
+                                    <img class="svg" src="{{ 'img/svg/gift.svg' | relative_url }}" alt="" />
+                                    <span><label>Birthday:</label> {{ site.date_of_bath | date: ' %b %d, %Y' }}</span>
+                                </li>
+                                <li>
+                                    <img class="svg" src="{{ 'img/svg/calendar-4.svg' | relative_url }}" alt="" />
+                                    {%- assign currentYear = site.time | date: "%Y" -%}
+                                    {%- assign bathYear = site.date_of_bath | date: "%Y" -%}
+
+                                    <span><label>Age:</label> {{  currentYear | minus: bathYear }}</span>
+                                </li>
+                                <li>
+                                    <img class="svg" src="{{ 'img/svg/location-1.svg' | relative_url }}" alt="" />
+                                    <span>
+                                        <label>Location:</label>
+                                        <a class="href_location" href="#">{{ site.address }}</a>
+                                    </span>
+                                </li>
+                                <li>
+                                    <img class="svg" src="{{ 'img/svg/game-controller-2.svg' | relative_url }}" alt="" />
+                                    <span><label>Interests:</label> {{ site.interests }}</span>
+                                </li>
+                                <li>
+                                    <img class="svg" src="{{ 'img/svg/study-5.svg' | relative_url }}" alt="" />
+                                    <span><label>Study:</label> <a class="href_location" href="#">{{ site.study }} </a></span>
+                                </li>
+                                <li>
+                                    <img class="svg" src="{{ 'img/svg/degree-1.svg' | relative_url }}" alt="" />
+                                    <span><label>Degree:</label> {{ site.degree }}</span>
+                                </li>
+                                <li>
+                                    <img class="svg" src="{{ 'img/svg/message-3.svg' | relative_url }}" alt="" />
+                                    <span><label>Mail:</label> <a href="mailto:{{ site.email }}">{{ site.email }}</a></span>
+                                </li>
+                                <li>
+                                    <img class="svg" src="{{ 'img/svg/call-2.svg' | relative_url }}" alt="" />
+                                    <span><label>Phone:</label> <a href="tel:{{ site.phone }}">{{ site.phone }}</a></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="buttons">
+                            <ul>
+                                <li><a href="{{ site.cv_download_link }}"><span>Download CV</span></a></li>
+                                <li><a href="#"><span>Send Message</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

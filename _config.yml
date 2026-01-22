@@ -1,0 +1,372 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Molla Hafizur Rahman
+description: 'vCard & Resume Template'
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://arlo-jekyll-theme.vercel.app" # the base hostname & protocol for your site, e.g. http://example.com
+
+logo:
+  logo: 'img/logo/logo.png'
+  light: 'img/logo/light.png'
+  mobile: 'img/logo/mobile.png'
+favicon:  ''
+
+vendor:
+  name: Molla Hafizur Rahman
+  url: "https://github.com/HafizSunny"
+
+html_directionality:  'rtl' # ltl ( default ) "rtl", ltl
+# Build settings
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+
+permalink: /blog/:title:output_ext
+paginate: 6
+paginate_path: "/blog/page:num/"
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+comments:
+  provider               : 'disqus' # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  disqus:
+    shortname            : 'patrick-ducor' # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+  discourse:
+    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+  facebook:
+    # https://developers.facebook.com/docs/plugins/comments
+    appid                :
+    num_posts            : # 5 (default)
+    colorscheme          : # "light" (default), "dark"
+  utterances:
+    theme                : # "github-light" (default), "github-dark"
+    issue_term           : # "pathname" (default)
+  staticman:
+    branch               : # "master"
+    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
+
+# Analytics
+analytics:
+  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
+  google:
+    tracking_id          :
+    anonymize_ip         : # true, false (default)
+
+# google map key
+google_map_key           : 'AIzaSyDz2w7HUaWudHwd7AWQpCL48Qs050WOn9s' # false (default),
+
+# HTML Compression
+# - https://jch.penibelst.de/
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+##
+getform_id: # to go https://getform.io/ and create an account for contact form
+
+
+##########################################################################
+################# seo ####################################################
+##########################################################################
+# SEO Related
+google_site_verification :
+bing_site_verification   :
+yandex_site_verification :
+naver_site_verification  :
+og_image                 : '/images/profile.jpg' # Open Graph/Twitter default site image
+header:
+  - image                 : '/images/profile.jpg'
+
+###########################################################################
+###########################   Home / hero  ################################
+###########################################################################
+
+first_name: Molla Hafizur
+last_name: Rahman
+date_of_bath: '1992-09-10 00:00'
+email: 'hafiz.sunny0909@gmail.com'
+phone: '+1 4798008544'
+address: 'Fayetteville, AR, USA'
+interests: 'Playstation, Reading'
+study: 'Univercity of Arkansas'
+degree: 'PhD'
+cv_download_link: '#'
+user_intro: ' I am a Data scientist, and I&#39;m very passionate and dedicated to my work. With 5+ years experience in data science and machine learning, I have acquired the skills and knowledge necessary to make a project a successfull.'
+
+
+freelance_hire: true
+professions:
+  - data scientist
+  - data analyst
+  - mechanical engineer
+  - data scientist
+author_description: "<strong>Hello, I’m a Molla Hafizur</strong>, web-developer based on Paris. <br> I have rich experience in web site design &amp; building <br> and customization. Also I am good at <strong>html, css, <br> wordpress, php, jquery, bootstrap.</strong>"
+social_link:
+  - name: facebook
+    icon: "xcon-facebook"
+    link: "#"
+  - name: twitter
+    icon: "xcon-twitter"
+    link: "#"
+
+  - name: linkedin
+    icon: "xcon-linkedin"
+    link: "#"
+  - name: instagram
+    icon: "xcon-instagram"
+    link: "#"
+  - name: behance
+    icon: "xcon-behance"
+    link: "#"
+
+
+#############################################
+######### Our Services ######################
+#############################################
+our_services_title: 'Skills'
+our_services_tagline: 'What I Do'
+
+our_services:
+  - name: "Programming language"
+    image: "img/svg/source.svg"
+    description: "C++, Python, R, SQL, MATLAB"
+
+  - name: 'ML library'
+    image: 'img/svg/light-bulb.svg'
+    description: 'TensorFlow, Keras, PyTorch, Scikit-learn, Pandas, Numpy,'
+
+  - name: 'Data vizualization'
+    image: 'img/svg/line-chart.svg'
+    description: 'Matplotlib, Seaborn, Bokeh, Tabeau, ggplot'
+
+  - name: 'Platform and tools'
+    image: 'img/svg/cloud.svg'
+    description: 'Linux, High performance computing (HPC), AWS, Spark'
+
+  - name: 'Engineering tools'
+    image: 'img/svg/service.svg'
+    description: 'Solidworks, AutoCAD, 3DSMAX, ANSYS, Rhino'
+
+  - name: 'Graphics tools'
+    image: 'img/svg/adobe-photoshop.svg'
+    description: 'Photoshop, Illustrator, Premier pro'
+
+##################################################################
+################  professional_skills ############################
+##################################################################
+professional_skill_title: 'In <span>different projects</span>, I have used different tools to model, vizulalize and analyze machine learning problem .'
+professional_skill_description: 'While builiding machine learning and deep learning models, I try to understand the essence of data by feature engineering and vizulaizing.
+Also, after obtaining the result, I focus to interpret them  '
+
+professional_skills:
+  - name: 'Python'
+    percentage: '95'
+
+  - name: 'SQL'
+    percentage: '80'
+
+  - name: 'ML libraries'
+    percentage: '95'
+
+  - name: 'Data vizulazation'
+    percentage: '85'
+##########################################
+################ portfolios ##############
+#########################################
+portfolio_title: 'ML Projects'
+portfolio_tagline: 'Portfolios'
+portfolio_categories: ['Supervised', 'Unsupervised', 'Reinforcement learning']
+
+portfolios:
+  - main_image: 'img/portfolio/1.jpg'
+    title: 'Image classification'
+    type: 'Supervised'
+    category: 'In this project, I have classified boiling images using CNN, PCA and MLP'
+    Link: 'https://github.com/HafizSunny/Boiling-Images-classification'
+
+  - main_image: 'img/portfolio/2.jpg'
+    title: 'Clustering images'
+    type: 'Unsupervised'
+    category: 'This project clusters images using K-means clustering.
+
+              Before that the dimensionality of the images are reduced by PCA'
+    Link: 'https://hafizsunny.github.io/blog/PCA-analysis-and-clustering-images.html'
+
+  - main_image: 'img/portfolio/3.jpg'
+    title: 'Timeseries analysis'
+    type: 'Supervised'
+    category: 'This project forecasts vapor fraction using LSTM/GRU and CNN'
+    Link: 'https://github.com/HafizSunny/Vapor-fraction-prediction'
+
+
+  - main_image: 'img/portfolio/4.jpg'
+    title: 'Future frame prediction'
+    type: 'Supervised'
+    category: 'In this project, I have predicted future frames applying PCA and LSTM'
+    Link: 'https://hafizsunny.github.io/blog/Future-frame-predition-using-LSTM.html'
+
+  - main_image: 'img/portfolio/5.jpg'
+    title: '3D CAD models classification'
+    type: 'Supervised'
+    category: 'This project classify 3D CAD models using two DL methods'
+    Link: 'https://github.com/HafizSunny/3D-CAD-model-classification'
+
+  - main_image: 'img/portfolio/6.jpg'
+    title: 'Sequence Embedding'
+    type: 'Unsupervised'
+    category: 'In this project, I use several embedding to convert low low-dimensional space'
+    Link: 'https://github.com/HafizSunny/Design-Embedding'
+
+############################################
+############## testimonial #################
+############################################
+testimonials:
+  - quote: 'I am an avid learner and always find interest in new challenge. I am deeply fascinated in machine learning and artificial intelligence. As a mechanical engineering student, I am trying to utilize the power of artificial intelligence in the engineering design field.'
+    author_name: 'Molla Hafizur Rahman'
+    author_image: '/img/about/2.jpg'
+    author_profession: 'Data scientist'
+
+#############################################
+############ EXPERIENCE #####################
+#############################################
+experience_title: 'Experience'
+experience_tagline: 'Working Process'
+experience_description: ''
+
+educations:
+  - year: '2017 - 2022'
+    title: 'University of Arkansas'
+    description: 'Pursuing my PhD degree in Mechanical Engineering with a concentration of Application of Machine learning and deep learning in Engineering design '
+  - year: '2010 - 2015'
+    title: 'Bangladesh University of Engineering and Technology'
+    description: 'Completed my Bachelor of Science (BSc.) degree in Naval Architecture and Marine Engineering.'
+  - year: '2007 - 2009'
+    title: 'Secondary School'
+    description: 'Completed my Higher Secondary Certificate (HSC) degree in Science major with a GPA 5.0. '
+
+experiences:
+  - year: '2017 - Current'
+    title: 'Graduate research assistant'
+    description: 'Cleaned and analyzed a large amount of structured, unstructed data (JSON, text, CAD). Implemented different state-of-the-art deep learning and
+    and reinforcement learning methods to solve prediction, classification and analysis problem.'
+  - year: '2015 - 2017'
+    title: 'Assistant Engineer'
+    description: 'Analyzed a time series analysis using ARIMA model in R on previous 5 years data set for billet production forecasting.'
+
+#################################
+####### Pricing Tables ##########
+#################################
+pricing_title: 'Selected machine learning fcoused papers'
+pricing_tagline: 'Publications'
+
+pricing_table:
+  - name: "Journal"
+    icon: "img/svg/icon.svg"
+#    price: ""
+    lines: >-
+        <li><p>Predicting human design decisions with deep recurrent neural network combining static and dynamic data</p></li>
+#        <li><p>Creative Design</p></li>
+#        <li><p>Photography</p></li>
+    url: "https://www.cambridge.org/core/journals/design-science/article/predicting-human-design-decisions-with-deep-recurrent-neural-network-combining-static-and-dynamic-data/097456E3CE09F11435F535B507AE9B8B"
+
+  - name: "Conference"
+    icon: "img/svg/small-rocket-ship-silhouette.svg"
+#    price: "500"
+    lines: >-
+        <li><p>Design Embedding: Representation Learning of Design Thinking to Cluster Design Behaviors</p></li>
+#        <li><p>Creative Design</p></li>
+#        <li><p>Photography</p></li>
+    url: "https://asmedigitalcollection.asme.org/IDETC-CIE/proceedings-abstract/IDETC-CIE2021/85420/V006T06A051/1128566"
+
+  - name: "Conference"
+    icon: "img/svg/fire.svg"
+#    price: "999"
+    lines: >-
+        <li><p>Automatic clustering of sequential design behaviors</p></li>
+#        <li><p>Creative Design</p></li>
+#        <li><p>Photography</p></li>
+    url: "https://asmedigitalcollection.asme.org/IDETC-CIE/proceedings-abstract/IDETC-CIE2018/V01BT02A041/273543"
+
+########### Fun Facts ###############
+fun_facts:
+  - name: "47 Albumes Listened"
+    icon: "la la-headphones"
+  - name: "15 Awards Won"
+    icon: "la la-trophy"
+  - name: "54 Projects Completed"
+    icon: "la la-lightbulb-o"
+  - name: "10 Countries Visited"
+    icon: "la la-flag-o"
+  - name: "50+ Books Readed"
+    icon: "la la-book"
+  - name: "100 000 Lines of Code"
+    icon: "la la-code"
+  - name: "49 Satisfied Customers"
+    icon: "la la-smile-o"
+  - name: "1250 km Cycled"
+    icon: "la la-bicycle"
+
+
+
+############ Clients ##########
+clients:
+  - image: "images/clients/client_1.png"
+    name: ""
+    url: "#"
+  - image: "images/clients/client_2.png"
+    name: ""
+    url: "#"
+  - image: "images/clients/client_3.png"
+    name: ""
+    url: "#"
+  - image: "images/clients/client_4.png"
+    name: ""
+    url: "#"
+  - image: "images/clients/client_1.png"
+    name: ""
+    url: "#"
+  - image: "images/clients/client_2.png"
+    name: ""
+    url: "#"
+  - image: "images/clients/client_3.png"
+    name: ""
+    url: "#"
+  - image: "images/clients/client_4.png"
+    name: ""
+    url: "#"

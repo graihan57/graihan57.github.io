@@ -1,0 +1,26 @@
+<div class="news_inner arlo_flod_none">
+    <!-- Pagination links -->
+    <div class="arlo_pagination">
+        {% if paginator.previous_page %}
+        <div class="arlo_tm_button">
+            <a href="{{ paginator.previous_page_path }}" class="previous">
+                Previous
+            </a>
+        </div>
+        {% else %}
+        <div class="arlo_tm_button">
+            <a class="previous" href="#">Previous</a>
+        </div>
+        {% endif %}
+
+        {% if paginator.next_page %}
+        <div class="arlo_tm_button next">
+            <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+        </div>
+        {% else %}
+        <div class="arlo_tm_button next">
+            <a class="next" href="#">Next</a>
+        </div>
+        {% endif %}
+    </div>
+</div>

@@ -1,0 +1,33 @@
+{%- assign animation = false -%}
+{%- if page.home_style == 'animation' -%}
+ {%- assign animation = true -%}
+{%- endif -%}
+<div class="arlo_tm_section">
+    <div class="arlo_tm_pricing">
+        <div class="container">
+            <div class="arlo_title_holder">
+                <span>{{ site.pricing_title }}</span>
+                <h3>{{ site.pricing_tagline }}</h3>
+            </div>
+            <div class="pricing_inner">
+                <ul>
+                    {%- for table in site.pricing_table -%}
+                    <li  class="{%- if animation -%}wow fadeInUp{%- endif -%}" {%- if animation -%} data-wow-duration="0.8s"{%- endif -%} {%- if animation -%} data-wow-delay="0.{{ forloop.index | times: 2 }}s"{%- endif -%}>
+                        <div class="inner">
+                            <img class="svg" src="{{ table.icon | relative_url }}" alt="" />
+                            <h3 class="title">{{ table.name }}</h3>
+<!--                            <h3 class="price">${{ table.price }}</h3> -->
+                            <ul>
+                                {{ table.lines }}
+                            </ul>
+                            <div class="arlo_tm_button">
+                                <a href="{{ table.url }}">Link</a>
+                            </div>
+                        </div>
+                    </li>
+                    {%- endfor -%}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

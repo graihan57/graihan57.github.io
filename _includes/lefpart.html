@@ -1,0 +1,38 @@
+
+
+
+
+<div class="arlo_tm_leftpart">
+    <div class="inner">
+        <div class="logo">
+            <a class="dark" href="{{ '/' | relative_url }}">
+                <img src="{{ site.logo.logo | relative_url }}" alt="" />
+            </a>
+            <a class="light" href="{{ '/' | relative_url }}">
+                <img src="{{ site.logo.light | relative_url }}" alt="" />
+            </a>
+        </div>
+        <div class="menu scrollable">
+            <ul>
+                <li><a href="#home" {%- if page.url != '/' -%}onclick="window.location='{{ '/' | absolute_url }}#home'"{%- endif -%}>Home</a></li>
+                <li><a href="#about" {%- if page.url != '/' -%}onclick="window.location='{{ '/' | absolute_url }}#about'"{%- endif -%}>About</a></li>
+                <li><a href="#services" {%- if page.url != '/' -%}onclick="window.location='{{ '/' | absolute_url }}#services'"{%- endif -%}>Skills</a></li>
+                <li><a href="#portfolio" {%- if page.url != '/' -%}onclick="window.location='{{ '/' | absolute_url }}#portfolio'"{%- endif -%}>Portfolio</a></li>
+<!--                <li><a href="#news" {%- if page.url != '/' -%}onclick="window.location='{{ '/' | absolute_url }}#news'"{%- endif -%}>Portfolio</a></li>            -->
+                <li><a href="#contact" {%- if page.url != '/' -%}onclick="window.location='{{ '/' | absolute_url }}#contact'"{%- endif -%}>Contact</a></li>
+            </ul>
+        </div>
+        <div class="bottom">
+            <div class="social">
+                <ul>
+                    {%- for social in site.social_link -%}
+                    <li><a href="{{ social.link }}"><i class="{{ social.ion }}"></i></a></li>
+                    {%- endfor -%}
+                </ul>
+            </div>
+        </div>
+        <div class="resize">
+            <a href="#"><span></span></a>
+        </div>
+    </div>
+</div>

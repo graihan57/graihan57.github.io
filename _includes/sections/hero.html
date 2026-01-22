@@ -1,0 +1,172 @@
+
+<div class="arlo_tm_section" id="home">
+{%- if page.home_style == 'parallax' -%}
+
+    <div class="arlo_tm_hero_header">
+        <div class="hero_image jarallax" data-img-url="{{'img/slider/6.jpg' | relative_url }}" data-speed="0"></div>
+        <div class="overlay"></div>
+        <div class="hero_content">
+            <div class="image_wrap">
+                <img src="{{'img/about/500x500.jpg' | relative_url }}" alt="" />
+                <div class="main" data-img-url="{{'img/about/3.jpg' | relative_url }}"></div>
+            </div>
+            <div class="name_holder">
+                <h3>{{ site.first_name }} <span>{{ site.last_name }}</span></h3>
+            </div>
+            <div class="text_typing">
+                <p>I'm a <span class="arlo_tm_animation_text_word"></span></p>
+            </div>
+        </div>
+        <div class="arlo_tm_arrow_wrap bounce anchor">
+            <a href="#about"><i class="xcon-angle-double-down"></i></a>
+        </div>
+    </div>
+
+{%- endif -%}
+
+{%- if page.home_style == 'water' -%}
+
+    <div class="arlo_tm_hero_header repple" id="ripple">
+        <div class="overlay"></div>
+        <div class="hero_content">
+            <div class="image_wrap">
+                <img src="{{ 'img/about/500x500.jpg' | relative_url }}" alt="" />
+                <div class="main" data-img-url="{{ 'img/about/3.jpg' | relative_url }}"></div>
+            </div>
+            <div class="name_holder">
+                <h3>{{ site.first_name }} <span>{{ site.last_name }}</span></h3>
+            </div>
+            <div class="text_typing">
+                <p>I'm a <span class="arlo_tm_animation_text_word"></span></p>
+            </div>
+        </div>
+        <div class="arlo_tm_arrow_wrap bounce anchor">
+            <a href="#about"><i class="xcon-angle-double-down"></i></a>
+        </div>
+    </div>
+
+{%- endif -%}
+
+{%- if page.home_style == 'glitch' -%}
+
+    <div class="arlo_tm_hero_header glitche">
+        <div class="glitch"></div>
+        <div class="overlay fff"></div>
+        <div class="fff">
+            <div class="hero_content">
+            <div class="image_wrap">
+                <img src="{{ 'img/about/500x500.jpg' | relative_url }}" alt="" />
+                <div class="main" data-img-url="{{ 'img/about/3.jpg' | relative_url }}"></div>
+            </div>
+            <div class="name_holder">
+                <h3>{{ site.first_name }} <span>{{ site.last_name }}</span></h3>
+            </div>
+            <div class="text_typing">
+                <p>I'm a <span class="arlo_tm_animation_text_word"></span></p>
+            </div>
+        </div>
+        </div>
+        <div class="arlo_tm_arrow_classic bounce anchor">
+            <a href="#about"><i class="xcon-angle-double-down"></i></a>
+        </div>
+    </div>
+
+{%- endif -%}
+
+
+{%- if page.home_style == 'particle' -%}
+
+<div class="arlo_tm_hero_header">
+    <div class="hero_image jarallax" data-img-url="{{ 'img/slider/6.jpg' | relative_url }}" data-speed="0"></div>
+    <div id="particles-js"></div>
+    <div class="overlay"></div>
+    <div class="hero_content">
+        <div class="image_wrap">
+            <img src="{{ 'img/about/500x500.jpg' | relative_url }}" alt="" />
+            <div class="main" data-img-url="{{ 'img/about/3.jpg' | relative_url }}"></div>
+        </div>
+        <div class="name_holder">
+            <h3>{{ site.first_name }} <span>{{ site.last_name }}</span></h3>
+        </div>
+        <div class="text_typing">
+            <p>I'm a <span class="arlo_tm_animation_text_word"></span></p>
+        </div>
+    </div>
+    <div class="arlo_tm_arrow_wrap bounce anchor">
+        <a href="#about"><i class="xcon-angle-double-down"></i></a>
+    </div>
+</div>
+{%- endif -%}
+{%- if page.home_style == 'kenburn' -%}
+
+    <div class="arlo_tm_hero_header">
+        <div class="overlay_slider vegas-slide">
+            <div class="vegas-slide-inner"></div>
+        </div>
+        <div class="overlay"></div>
+        <div class="hero_content">
+            <div class="image_wrap">
+                <img src="{{ 'img/about/500x500.jpg' | relative_url }}" alt="" />
+                <div class="main" data-img-url="{{ 'img/about/3.jpg' | relative_url }}"></div>
+            </div>
+            <div class="name_holder">
+                <h3>{{ site.first_name }} <span>{{ site.last_name }}</span></h3>
+            </div>
+            <div class="text_typing">
+                <p>I'm a <span class="arlo_tm_animation_text_word"></span></p>
+            </div>
+        </div>
+        <div class="arlo_tm_arrow_classic bounce anchor">
+            <a href="#about"><i class="xcon-angle-double-down"></i></a>
+        </div>
+    </div>
+
+{%- endif -%}
+
+{%- if page.home_style == 'youtube' -%}
+<div class="arlo_tm_hero_header">
+    <a id="video" class="youtube-bg" data-property="{videoURL:'https://www.youtube.com/watch?v=iIrSCm_0Sj4',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, quality:'default'}"></a>
+    <div class="overlay"></div>
+    <div class="hero_content">
+        <div class="image_wrap">
+            <img src="{{ 'img/about/500x500.jpg' | relative_url }}" alt="" />
+            <div class="main" data-img-url="{{ 'img/about/3.jpg' | relative_url }}"></div>
+        </div>
+        <div class="name_holder">
+            <h3>Albert <span>Walkers</span></h3>
+        </div>
+        <div class="text_typing">
+            <p>I'm a <span class="arlo_tm_animation_text_word"></span></p>
+        </div>
+    </div>
+    <div class="arlo_tm_arrow_classic bounce anchor">
+        <a href="#about"><i class="xcon-angle-double-down"></i></a>
+    </div>
+</div>
+{%- endif -%}
+
+{%- if page.home_style == 'animation' -%}
+
+    <div class="arlo_tm_hero_header">
+        <div class="hero_image jarallax" data-img-url="{{ 'img/slider/6.jpg' | relative_url }}" data-speed="0"></div>
+        <div class="overlay"></div>
+        <div class="hero_content">
+            <div class="image_wrap">
+                <img src="{{ 'img/about/500x500.jpg' | relative_url }}" alt="" />
+                <div class="main" data-img-url="{{ 'img/about/3.jpg' | relative_url }}"></div>
+            </div>
+            <div class="name_holder">
+                <h3>{{ site.first_name }} <span>{{ site.last_name }}</span></h3>
+            </div>
+            <div class="text_typing">
+                <p>I'm a <span class="arlo_tm_animation_text_word"></span></p>
+            </div>
+        </div>
+        <div class="arlo_tm_arrow_classic bounce anchor">
+            <a href="#about"><i class="xcon-angle-double-down"></i></a>
+        </div>
+    </div>
+
+{%- endif -%}
+
+</div>

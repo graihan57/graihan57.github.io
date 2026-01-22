@@ -1,0 +1,54 @@
+{%- assign animation = false -%}
+{%- if page.home_style == 'animation' -%}
+ {%- assign animation = true -%}
+{%- endif -%}
+<div class="arlo_tm_section" id="services">
+    <div class="arlo_tm_services">
+        <div class="container">
+            <div class="arlo_title_holder">
+                <span>{{ site.our_services_tagline }}</span>
+                <h3>{{ site.our_services_title }}</h3>
+            </div>
+            <div class="service_inner">
+                <ul>
+                    {%- for service in site.our_services -%}
+                    <li  class="{%- if animation -%}wow fadeInUp{%- endif -%}" {%- if animation -%} data-wow-duration="0.8s" {%- endif -%} {%- if animation -%}data-wow-delay="0.{{ forloop.index | plus: 1 | times: 2 }}s" {%- endif -%}>
+                        <div class="inner">
+                            <img class="svg" src="{{ service.image | relative_url }}" alt="" />
+                            <h3>{{ service.name }}</h3>
+                            <p>{{ service.description }}</p>
+                        </div>
+                    </li>
+                    {%- endfor -%}
+                </ul>
+                <div class="arlo_tm_progress_wrap">
+                    <div class="progress_wrap_inner">
+                        <div class="left">
+                            <div class="main_title">
+                                <h3>{{ site.professional_skill_title }}</h3>
+                            </div>
+                            <div class="text">
+                                <p>{{ site.professional_skill_description }}</p>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="arlo_progress">
+                                {%- for skill in site.professional_skills -%}
+                                <div class="progress_inner" data-value="{{ skill.percentage }}" data-color="#ff214f">
+                                    <span>
+                                        <span class="label">{{ skill.name }}</span>
+                                        <span class="number">{{ skill.percentage }}%</span>
+                                    </span>
+                                    <div class="background">
+                                        <div class="bar"><div class="bar_in"></div></div>
+                                    </div>
+                                </div>
+                                {%- endfor -%}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

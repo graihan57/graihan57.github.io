@@ -1,0 +1,51 @@
+---
+#layout: compress
+---
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+{%- include head.html -%}
+{%- assign body_class = '' -%}
+{% if page.html_directionality == 'rtl' and page.layout != "classic" %}
+	{%- assign body_class = page.html_directionality -%}
+{% endif %}
+
+{%- if page.background_style == "dark" -%}
+	{%- assign body_class = body_class | append: ' dark' -%}
+{%- endif -%}
+
+{%- if page.layout == "classic" -%}
+	{%- assign body_class = body_class | append: ' classic' -%}
+{%- endif -%}
+
+<body class="{{ body_class }}">
+	
+<!-- PRELOADER -->
+{%- include preloader.html -%}
+<!-- /PRELOADER -->
+	
+<!-- WRAPPER ALL -->
+<div class="arlo_tm_all_wrap">
+
+	<div class="wrapper_inner">
+
+		<div class="arlo_tm_popup_news scrollable">
+			<a class="closer" href="#">Close</a>
+			<div class="container">
+				<div class="news_inner"></div>					
+			</div>
+		</div>
+		
+		<!-- Topbar -->
+		{%- include topbar.html -%}
+		<!-- /Topbar -->
+		
+		{{ content }}
+	</div>
+</div>
+<!-- / WRAPPER ALL -->
+	{%- include scripts.html -%}
+</body>
+</html>
